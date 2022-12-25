@@ -13,7 +13,8 @@ export default function Nav(){
       <ul className="flex items-center gap-10">
         {!user &&(
           <Link href={ "/auth/login" } className="py-2 px-4 text-sm bg-cyan-500 text-white rounded-lg font-medium ml-8"> Join Now </Link>
-          )}
+        )}
+
         {user && (
           <div className="flex items-center gap-6">
             <Link href='/post'>
@@ -23,7 +24,7 @@ export default function Nav(){
               <img className="w-12 rounded-full cursor-pointer" src={user.photoURL} />
             </Link>
           </div>
-          )}
+        )}
       </ul>
     </nav>
   );
