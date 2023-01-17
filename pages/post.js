@@ -53,6 +53,10 @@ export default function Post() {
       });
 
       setPost({ description: "" });
+      toast.success("A post has been made", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 1000,
+      });
       return route.push("/");
     }
   };
